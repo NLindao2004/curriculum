@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 2%;
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    display: flex; /* Usa flexbox para la disposición */
+    justify-content: space-around; /* Espacia los elementos de forma uniforme */
+} 
+
+
+ul li {
+    margin-right: 15px; /* Espacio entre los elementos */
+}
+
+
+ul li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento */
+}
+
+ul li a {
+    color: rgb(0, 0, 0); /* Color del texto (opcional) */
+    text-decoration: none; /* Elimina el subrayado (opcional) */
+    padding: 10px; /* Espacio alrededor del texto */
+    display: block; /* Hace que el enlace ocupe todo el espacio del li */
+}
