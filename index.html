@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+    <meta name="author" content="Nehemias Lindao">
+    <title>Nehemias Lindao - CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />    
 </head>
+
 <body>
     <nav class="container">
         <ul>
@@ -17,14 +20,17 @@
         </ul>
     </nav>
     <header>
-        <h1>Tu Nombre</h1>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
+        <div id="container-header">
+            <img src="https://placehold.co/400x400" alt="Imagen Principal" id="imagen-pricipal">
+            <h1>Nehemias Lindao - CV</h1>
+            <p>Estudiante Universitario ESPOL </p>
+        </div>
     </header>
     
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
+            <p>Me llamo Nehemias Lindao estudiante univesitario Politecnico apasionado por la progrmación.</p>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
@@ -38,7 +44,50 @@
         <section id="proyectos">
             <h2>Proyectos</h2>
         </section>
+        <div id="container-mf"> 
+            <div id="map"></div>
+            <form>
+                <label for="nombre">Nombre Completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+        
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <label for="experiencia">Experiencia Laboral:</label><br>
+                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
+                <br><br>
+        
+                <label for="educacion">Educación:</label><br>
+                <textarea id="educacion" name="educacion" rows="5" required></textarea>
+                <br><br>
+        
+                <fieldset>
+                    <legend>Habilidades Técnicas:</legend>
+                    <label><input type="checkbox" name="habilidades" value="HTML"> HTML</label><br>
+                    <label><input type="checkbox" name="habilidades" value="CSS"> CSS</label><br>
+                    <label><input type="checkbox" name="habilidades" value="JavaScript"> JavaScript</label>
+                </fieldset>
+                
+                <br>
+                
+                <label for="intereses">Intereses:</label>
+                <select id="intereses" name="intereses">
+                    <option value="desarrollo">Desarrollo Web</option>
+                    <option value="diseno">Diseño Gráfico</option>
+                    <option value="marketing">Marketing Digital</option>
+                </select>
+                
+                <br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
     </main>
+
+    
     <footer>
         <p>© Tu Nombre - 2023</p>
         <ul>
@@ -46,5 +95,10 @@
             <li><a href="https://github.com/tunombre">GitHub</a></li>
         </ul>
     </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
 </body>
+
+
 </html>

@@ -31,3 +31,23 @@ ul li a {
     padding: 10px; /* Espacio alrededor del texto */
     display: block; /* Hace que el enlace ocupe todo el espacio del li */
 }
+
+
+#map {
+   height:400px;
+   width: 700px;
+}
+
+#container-header {
+    text-align: center;
+}
+
+#imagen-pricipal {
+    border-radius: 50%;
+}
+
+#container-mf{
+    display: flex;
+    align-items: flex-start;
+    gap:100px;
+}
