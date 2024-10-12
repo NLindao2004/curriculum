@@ -7,42 +7,91 @@
     <title>Nehemias Lindao - CV</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
-    <nav class="container">
+    <nav class="nav-container">
         <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
+            <li class="menu">
+                <a href="#educacion" class="menu-enlace">
+                    <h2 class="menu-title">Educación</h2>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#habilidades" class="menu-enlace">
+                    <h2 class="menu-title">Habilidades</h2>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#experiencia" class="menu-enlace">
+                    <h2 class="menu-title">Experiencia</h2>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#proyectos" class="menu-enlace">
+                    <h2 class="menu-title">Proyectos</h2>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#contacto" class="menu-enlace">
+                    <h2 class="menu-title">Contacto</h2>
+                </a>
+            </li>
         </ul>
     </nav>
+        
     <header>
-        <div id="container-header">
-            <img src="https://placehold.co/400x400" alt="Imagen Principal" id="imagen-pricipal">
-            <h1>Nehemias Lindao - CV</h1>
-            <p>Estudiante Universitario ESPOL </p>
+        <div class="header-container"> 
+            <div class="text-section">
+                <h3 class="first-text">CODIFICADOR | CREADOR | DESARROLLADOR</h3>
+                <h1>Nehemias Lindao</h1>
+                <h3>Desarrollador web Jr</h3>
+                <p class="general-text">Soy un apasionado de la programación que se encuentra a la mitad de sus estudios univesitarios, 
+                    dedicado al desarrollo de paginas webs. En el transcurso de mi carrera he adquirido un amplio conjunto de habilidades 
+                    en diversas áreas de la programación y me enfoco en el desarrollo web y móvil, utilizando lenguajes como Python, JavaScript 
+                    y Java.
+    
+                    Me entusiasma explorar y aprender nuevas tecnologías, enfrentar desafíos que me permitan crecer profesionalmente. 
+                    Estoy comprometido con contribuir en proyectos que marquen la diferencia y deseo colaborar en un entorno 
+                    dinámico donde pueda aplicar y expandir mis conocimientos. Mi objetivo es formar parte de un equipo creativo y 
+                    talentoso que impulse la innovación y el progreso.</p>
+            </div>
+            <div class="image-section">
+                <img src="/imagenes/perfil.jpeg" alt="Imagen Principal" id="imagen-pricipal"> 
+            </div>
         </div>
     </header>
     
-    <main>
-        <section id="resumen">
-            <h2>Resumen</h2>
+    <main id="container-main">
+        <section id="educacion">
+            <h2>Educación</h2>
             <p>Me llamo Nehemias Lindao estudiante univesitario Politecnico apasionado por la progrmación.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>    
+            <p class="general-text">A lo largo de mi carrera como estudiante, he adquirido experiencia en una variedad de lenguajes y tecnologías 
+                que me permiten crear soluciones eficientes.
+                Algunos de los lenguajes de programación en los que tengo conocimiento incluyen:</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                </div>
+                  
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
         </section>
-        <section id="educacion">
-            <h2>Educación</h2>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-        </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
         </section>
         <div id="container-mf"> 
             <div id="map"></div>
@@ -84,20 +133,25 @@
                 <button type="submit">Enviar</button>
             </form>
         </div>
+
+
+
+
+        <footer>
+            <p>© Tu Nombre - 2023</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
+                <li><a href="https://github.com/tunombre">GitHub</a></li>
+            </ul>
+        </footer>
+    
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="map.js"></script>
         
     </main>
 
     
-    <footer>
-        <p>© Tu Nombre - 2023</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
-    </footer>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="map.js"></script>
 </body>
 
 
