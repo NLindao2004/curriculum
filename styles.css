@@ -188,7 +188,7 @@ main{
     height: auto;             
 }
 
-.education{ padding: 0px;}
+.education{ padding: 0px; display: grid; grid-template-columns: 1fr 1fr; margin-top: 20px;}
 .ability{ padding: 0px;}
 
 .grid-container {
@@ -353,11 +353,6 @@ input {
 
 
 .floating-label {
-    top: 12px;
-    left: 10px;
-    font-size: 16px;
-    color: #999;
-    pointer-events: none;
     transition: all 0.2s ease-in-out;
 }
   
@@ -391,4 +386,13 @@ textarea{
 .button-form:hover{
     background-color: #45a049; /* Color de fondo al hacer hover */
     transform: scale(1.05);    /* Pequeño aumento de tamaño */
+}
+
+.content-footer{
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr;
+    align-content: center;
+    align-items: center;
+    gap: 0px;
 }
