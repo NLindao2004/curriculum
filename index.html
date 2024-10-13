@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nehemias Lindao">
     <title>Nehemias Lindao - CV</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 
@@ -59,79 +60,194 @@
                     talentoso que impulse la innovación y el progreso.</p>
             </div>
             <div class="image-section">
-                <img src="/imagenes/perfil.jpeg" alt="Imagen Principal" id="imagen-pricipal"> 
+                <img src="/imagenes/perfil.png" alt="Imagen Principal" id="imagen-pricipal"> 
             </div>
         </div>
     </header>
     
     <main id="container-main">
-        <section id="educacion">
+        <section id="educacion" class="education">
             <h2>Educación</h2>
             <p>Me llamo Nehemias Lindao estudiante univesitario Politecnico apasionado por la progrmación.</p>
         </section>
-        <section id="habilidades">
+
+        <section id="habilidades" class="ability">
             <h2>Habilidades</h2>    
             <p class="general-text">A lo largo de mi carrera como estudiante, he adquirido experiencia en una variedad de lenguajes y tecnologías 
                 que me permiten crear soluciones eficientes.
                 Algunos de los lenguajes de programación en los que tengo conocimiento incluyen:</p>
+                
                 <div class="grid-container">
+
                     <div class="grid-item">
-                        <i class="fab fa-css3-alt"></i>
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;">75%</div>
+                            </div>
+                            <i class="fa-brands fa-js" id="icon"></i>
+                        </div>  
                     </div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">4</div>
-                </div>
-                  
+
+                    <div class="grid-item">
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;">90%</div>
+                            </div>
+                            <i class="fa-brands fa-html5" id="icon"></i> 
+                        </div>                 
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;">70%</div>
+                            </div>
+                            <i class="fa-brands fa-python" id="icon"></i>
+                        </div>  
+                    </div> 
+
+                    <div class="grid-item">
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;">70%</div>
+                            </div>
+                            <i class="fa-brands fa-java" id="icon"></i> 
+                        </div>  
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;">90%</div>
+                            </div>
+                            <i class="fa-brands fa-css3-alt" id="icon"></i>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="divisor-grid">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;">50%</div>
+                            </div>
+                            <i class="fa-brands fa-react" id="icon"></i> 
+                        </div>  
+                    </div>
+                </div>        
         </section>
+
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <div class="container-exp">
+                <p class="experience-text">
+                        En mi rol como Desarrollador Jr., he tenido la oportunidad de colaborar en proyectos de terceras 
+                        personas, desempeñando un papel fundamental en la creación y personalización de sitios web 
+                        utilizando herramientas como WordPress. Durante este tiempo, he trabajado en la implementación 
+                        de soluciones funcionales y estéticas, desde la instalación y configuración de plugins hasta la
+                        adaptación de temas para cumplir con los requisitos específicos de cada cliente.
+                        
+                        Además, he desarrollado funcionalidades personalizadas mediante lenguajes como JavaScript, 
+                        lo que me ha permitido mejorar la interacción y experiencia de usuario en las plataformas web. 
+                        Esta experiencia me ha proporcionado una sólida base en el desarrollo front-end y back-end.
+                        
+                </p>
+                <div class="exp-image">
+                    <img src="/imagenes/fondo.avif" alt="Imagen de codigo" class="imagen-experience">
+                </di>
+                
+            </div>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <div class="container-project">
+                <figure>
+                    <img src="https://placehold.co/400x400" alt="Descripcion">
+                    <figcaption>Esta es una descripción de la imagen.</figcaption>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                </figure>
+                <figure>
+                    <img src="https://placehold.co/400x400" alt="Descripcion">
+                    <figcaption>Esta es una descripción de la imagen.</figcaption>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                </figure>
+            </div>
         </section>
+
+
         <section id="contacto">
             <h2>Contacto</h2>
         </section>
-        <div id="container-mf"> 
-            <div id="map"></div>
-            <form>
-                <label for="nombre">Nombre Completo:</label><br>
-                <input type="text" id="nombre" name="nombre" required>
-                <br><br>
-        
-                <label for="email">Correo Electrónico:</label><br>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-        
-                <label for="experiencia">Experiencia Laboral:</label><br>
-                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-                <br><br>
-        
-                <label for="educacion">Educación:</label><br>
-                <textarea id="educacion" name="educacion" rows="5" required></textarea>
-                <br><br>
-        
-                <fieldset>
-                    <legend>Habilidades Técnicas:</legend>
-                    <label><input type="checkbox" name="habilidades" value="HTML"> HTML</label><br>
-                    <label><input type="checkbox" name="habilidades" value="CSS"> CSS</label><br>
-                    <label><input type="checkbox" name="habilidades" value="JavaScript"> JavaScript</label>
-                </fieldset>
+        <div class="container-contact"> 
+            <form class="card-form">
+                <div class="card-contact"> 
+                    <div class="icon-contact">
+                        <i class="fa-regular fa-user" id="icon-contact"></i>   
+                    </div>
+                    
+                    <div> 
+                        <label for="nombre" class="floating-label">Nombre Completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+                   </div>
+                    
+                </div>
                 
-                <br>
+
                 
-                <label for="intereses">Intereses:</label>
-                <select id="intereses" name="intereses">
-                    <option value="desarrollo">Desarrollo Web</option>
-                    <option value="diseno">Diseño Gráfico</option>
-                    <option value="marketing">Marketing Digital</option>
-                </select>
+                <div class="card-contact"> 
+                    <div class="icon-contact">
+                        <i class="fa-regular fa-envelope" id="icon-contact"></i>   
+                    </div>
+
+                    <div> 
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Escribe tu email aquí" required>
+                   </div>
+                    
+                </div>
+
+
                 
-                <br><br>
+                <div class="card-contact"> 
+                    <div class="icon-contact">
+                        <i class="fa-solid fa-font" id="icon-contact"></i>   
+                    </div>
+                    
+                    <div> 
+                        <label for="asunto">Asunto:</label><br>
+                        <input type="asunto" id="asunto" name="asunto" placeholder="Escribe el asunto aquí" required>
+                   </div>
+    
+                </div>
                 
-                <button type="submit">Enviar</button>
+
+
+                <div class="card-contact"> 
+                    <div class="icon-contact">
+                        <i class="fa-regular fa-comment" id="icon-contact"></i>    
+                    </div>
+                    
+                    <div> 
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                   </div>
+                    
+                </div>
+
+                <div class="content-button-form">
+                    <button type="submit" class="button-form">Enviar</button>
+                </div>
             </form>
+            
+            <div id="map"></div>
         </div>
 
 

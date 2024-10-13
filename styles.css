@@ -9,7 +9,7 @@ body {
     height: auto;
     width: 90%;
     margin: 0 auto; 
-    background-color: #F6F2F6 ;
+    background-color: #F6F2F6;
     font-family: 'Candara', sans-serif;
     color: #000000;
 }
@@ -26,9 +26,8 @@ body {
     height: 100%;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
     background-color: #F6F2F6;
-    
 }
 
 .nav-container ul {
@@ -59,7 +58,7 @@ ul li a {
     border-radius:5px ;
     border: 0px solid transparent;
     padding-bottom: 40px;
-    width: 250px;
+    width: 230px;
     height: 40px;
     padding-top: 10px;
     background: #E1D5D9;
@@ -76,8 +75,8 @@ ul li a {
     display: block;
     height: 0;
     border-top: 5px solid #E1D5D9;
-    border-left: 125px solid transparent;
-    border-right: 125px solid transparent;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
     position: absolute;
     top: 100%;
     left: 0;
@@ -108,8 +107,8 @@ ul li a {
   content: "";
   display: block;
   height: 0;
-  border-left: 125px solid transparent;
-  border-right: 125px solid transparent;
+  border-left: 115px solid transparent;
+  border-right: 115px solid transparent;
   border-bottom: 0 solid #F6F2F6;
   position: absolute;
   bottom: 0;
@@ -134,6 +133,7 @@ ul li a {
     text-align: justify;
     line-height: 2.5;
     font-size: 18px;
+    padding: 0px;
 }
 
 header{
@@ -152,13 +152,13 @@ main{
     display: flex;            /* Hacemos que el contenedor use flexbox */
     justify-content: space-between;  /* Espacio entre el texto y la imagen */
     align-items: center;      /* Centra el contenido verticalmente */
-    padding: 0 20 20 20;            /* Espacio interno del contenedor */
+    padding: 0;            /* Espacio interno del contenedor */
 
 }
 
 .text-section {
     flex: 1;                  
-    padding: 10px;
+    padding: 0px;
 }
 
 .first-text{
@@ -188,37 +188,207 @@ main{
     height: auto;             
 }
 
-
+.education{ padding: 0px;}
+.ability{ padding: 0px;}
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    grid-template-rows: 1fr 1fr; /* Dos filas de igual tamaño */
-    gap: 10px; /* Espacio entre los elementos */
+    gap: 0px; /* Espacio entre los elementos */
     width: 100%; /* Ajusta el tamaño del contenedor */
-    height: 300px; /* Ajusta la altura total del grid */
-  }
+    height: 600px; /* Ajusta la altura total del grid */
+}
   
-  .grid-item {
-    background-color: #ddd;
-    padding: 20px;
+.grid-item {
+    background-color: #F6F2F6;
+    padding: 10px;
     text-align: center;
-    border: 1px solid #333;
-  }
-  
-
-
-#container-mf{
-    display: flex;
-    align-items: flex-start;
-    gap:100px;
+    border: 0px solid #333;
+    transition: background-color 0.3s ease;
 }
 
 
+.grid-item:hover .progress-bar .progress {
+    background-color: #13e91a; /* Cambia el color de la barra de progreso */
+    color: white; /* Cambia el color del texto de porcentaje */
+}
+
+
+.grid-item:hover i {
+    color: #4caf50; /* Cambia el color del ícono al hacer hover */
+}
+
+#icon{
+    flex: 1;
+    font-size: 150px; /* Ajusta este valor según el tamaño que desees */
+    width: 100%; /* Para que ocupe todo el ancho disponible */
+    height: 100%; /* Para que ocupe toda la altura disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s ease;
+}
+  
+.divisor-grid{
+    display: flex;            /* Hacemos que el contenedor use flexbox */
+    justify-content: space-between;  /* Espacio entre el texto y la imagen */
+    align-items: center;      /* Centra el contenido verticalmente */  
+}
+  
+.progress-bar {
+    flex: 1;
+    width: 100%;
+    background-color: #E1D5D9;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+.progress {
+    height: 30px;
+    background-color: #afa8aa;
+    text-align: center;
+    line-height: 30px;  
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    transition: width 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+  
+
+
+
+.container-exp{
+    display: grid;            /* Hacemos que el contenedor use flexbox */
+    grid-template-columns: 1fr 1fr;  /* Espacio entre el texto y la imagen */
+    align-items: center;      /* Centra el contenido verticalmente */
+    padding: 0;   
+    gap: 50px;
+    box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.experience-text{
+    padding: 0px; 
+    margin: 0px;
+    text-align: justify;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+.exp-image {
+    flex: 1;                 
+    text-align: center;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.imagen-experience{
+    width: 100%;
+    height: 495px;
+}
+
+.container-project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.container-contact{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: start;
+    gap:30px;
+}
+
+.card-form{
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 1fr 0fr; /* Cuatro filas del mismo tamaño */
+    gap: 15px; /* Espacio entre las filas */
+    width: 100%; /* Ajusta el tamaño según sea necesario */
+}
+.card-contact{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    gap:10px;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.icon-contact{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#icon-contact{
+    font-size: 35px;
+}
+
 
 #map {
-    height:400px;
-    width: 700px;
- }
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Ajusta este valor según lo necesites */
+    max-height: 400px;
+}
  
+.container-map{
+    display: flex; /* Para centrar el mapa dentro del contenedor */
+    justify-content: center;
+    align-items: center;
+}
  
+input {
+    width: 90%; /* El input ocupará el 100% del contenedor padre */
+    height: 30px;
+  }
+
+
+.floating-label {
+    top: 12px;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+  
+input.active + .floating-label,
+input:not(:placeholder-shown) + .floating-label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+textarea{
+    width: 90%;
+}
+
+.content-button-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-form{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;           /* Cambia el cursor al puntero */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-form:hover{
+    background-color: #45a049; /* Color de fondo al hacer hover */
+    transform: scale(1.05);    /* Pequeño aumento de tamaño */
+}
