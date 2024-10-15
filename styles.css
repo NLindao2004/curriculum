@@ -340,11 +340,7 @@ main{
     max-height: 400px;
 }
  
-.container-map{
-    display: flex; /* Para centrar el mapa dentro del contenedor */
-    justify-content: center;
-    align-items: center;
-}
+
  
 input {
     width: 90%; /* El input ocupará el 100% del contenedor padre */
@@ -395,4 +391,159 @@ textarea{
     align-content: center;
     align-items: center;
     gap: 0px;
+}
+
+
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+/* Media query para móviles (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+
+    /* Ajusta el body para ocupar el 100% del ancho */
+    body {
+        width: 100%; /* Asegura que el body ocupe todo el ancho en móviles */
+        margin: 0;   /* Elimina márgenes para que el contenido ocupe toda la pantalla */
+    }
+
+    /* Haz que el contenedor del menú sea más pequeño y centrado */
+    .menu {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .header-container{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    /* Ajusta los ítems del grid a una sola columna */
+    .education{
+        display: contents;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .grid-container{
+        display: contents;
+    }
+
+    .container-contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .container-iframe {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        overflow: hidden;
+    }   
+
+    .container-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container-exp {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0;
+        gap: 50px;
+        box-shadow:none;
+    }
+
+    .container-project{
+        display: contents;
+
+    }
+
+
+    .responsive-figure {
+        width: 100%; /* Asegura que el figure ocupe todo el ancho */
+        max-width: 400px; /* Establece un ancho máximo para mantener la proporción */
+        margin: 0 auto; /* Centra el figure en su contenedor */
+        text-align: center; /* Centra el texto dentro del figure */
+    }
+    
+    .responsive-img {
+        width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+    
+    /* Ajusta las imágenes para que ocupen el 100% del ancho en pantallas pequeñas */
+  
+    /* Centra los íconos y ajusta el tamaño en móviles */
+    #icon {
+        font-size: 100px; /* Reduce el tamaño del ícono en pantallas pequeñas */
+    }
+
+    /* Ajusta el formulario de contacto para que ocupe toda la pantalla */
+    .card-form, .card-contact {
+        width: 100%;
+    }
+
+    /* Asegura que el footer ocupe toda la pantalla */
+    .content-footer {
+        grid-template-rows: 1fr;
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el icono en móviles */
+    }
+
+    #nav-list {
+        display: none; /* Oculta el menú por defecto en móviles */
+        flex-direction: column; /* Coloca los elementos en columna */
+        position: absolute; /* Posiciona el menú */
+        top: 50px; /* Ajusta según sea necesario */
+        left: 0;
+        background-color: #F6F2F6; /* Fondo del menú */
+        width: 100%; /* Ancho completo */
+    }
+
+    #nav-list.active {
+        display: flex; /* Muestra el menú al activar */
+    }
+
+    .menu:before, .menu:after {
+        display: none; /* Oculta los pseudo-elementos */
+    }
+
+    .menu {
+        border-radius: 0; /* Quita el border-radius */
+        border: 1px solid black; /* Quita el borde */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        background: red; /* Quita el fondo */
+        text-align: center; /* Ajusta la alineación del texto si es necesario */
+        transition: none; /* Quita las transiciones */
+        cursor: default; /* Cambia el cursor si lo deseas */
+        padding: 7px;
+
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: left; 
+        padding: 0;
+        margin: 0px;
+        padding-top: 20px;
+        padding-left: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background-color: #F6F2F6;
+    }
 }

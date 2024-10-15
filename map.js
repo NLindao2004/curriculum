@@ -9,18 +9,22 @@ L.marker([-2.147438, -79.955432]).addTo(map)
     .openPopup();
 
 
-// Seleccionar el input y el label
 const input = document.getElementById('nombre');
 const label = document.querySelector('.floating-label');
 
-// Añadir el evento focus
 input.addEventListener('focus', function() {
   label.classList.add('active');
 });
 
-// Añadir el evento blur para cuando se salga del input
+
 input.addEventListener('blur', function() {
   if (input.value === '') {
     label.classList.remove('active');
   }
 });
+
+
+function toggleMenu() {
+  const navList = document.getElementById('nav-list');
+  navList.classList.toggle('active'); 
+}
