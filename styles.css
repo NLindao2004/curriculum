@@ -1,7 +1,7 @@
 html {
 
     height: 100%;
-    background-color: #F6F2F6;
+    background-color: #ffffff;
 }
 
 
@@ -9,11 +9,26 @@ body {
     height: auto;
     width: 90%;
     margin: 0 auto; 
-    background-color: #F6F2F6;
+    background-color: #ffffff;
     font-family: 'Candara', sans-serif;
     color: #000000;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
 * { box-sizing: border-box; }
 
   
@@ -27,7 +42,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: #F6F2F6;
+    background-color: #ffffff;
 }
 
 .nav-container ul {
@@ -61,7 +76,7 @@ ul li a {
     width: 230px;
     height: 40px;
     padding-top: 10px;
-    background: #E1D5D9;
+    background: #edede1;
     text-align: center;
     text-transform: uppercase;
     transition: 0.3s background-color;
@@ -74,7 +89,7 @@ ul li a {
     content: "";
     display: block;
     height: 0;
-    border-top: 5px solid #E1D5D9;
+    border-top: 5px solid #edede1;
     border-left: 115px solid transparent;
     border-right: 115px solid transparent;
     position: absolute;
@@ -93,8 +108,8 @@ ul li a {
     0.3s border-top-color;
 }
 
-.menu:hover { background: #B7A7AE; }
-.menu:hover:before { border-top-color: #B7A7AE; }
+.menu:hover { background: #969280; }
+.menu:hover:before { border-top-color: #969280; }
 
 
 .menu:hover:after {
@@ -109,7 +124,7 @@ ul li a {
   height: 0;
   border-left: 115px solid transparent;
   border-right: 115px solid transparent;
-  border-bottom: 0 solid #F6F2F6;
+  border-bottom: 0 solid #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -153,7 +168,7 @@ main{
     justify-content: space-between;  /* Espacio entre el texto y la imagen */
     align-items: center;      /* Centra el contenido verticalmente */
     padding: 0;            /* Espacio interno del contenedor */
-
+    padding-bottom: 20px;
 }
 
 .text-section {
@@ -163,7 +178,8 @@ main{
 
 .first-text{
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 
@@ -188,8 +204,59 @@ main{
     height: auto;             
 }
 
-.education{ padding: 0px; display: grid; grid-template-columns: 1fr 1fr; margin-top: 20px;}
-.ability{ padding: 0px;}
+.education{ 
+    padding: 0px;
+    margin: 0px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    gap: 30px;
+}
+
+
+.ability{ 
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px; 
+    padding-bottom: 20px;    
+
+}
+
+.experience{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px; 
+    padding-bottom: 20px;    
+}
+
+.project{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px; 
+    padding-bottom: 20px;    
+}
+
+.responsive-figure{
+    margin-bottom: 0px;
+}
+
+.responsive-figure  p {
+    margin-bottom: 0px;
+}
+
+.contact{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px; 
+    padding-bottom: 20px;    
+}
+
+.contact h2{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
 
 .grid-container {
     display: grid;
@@ -200,7 +267,7 @@ main{
 }
   
 .grid-item {
-    background-color: #F6F2F6;
+    color: #000000;
     padding: 10px;
     text-align: center;
     border: 0px solid #333;
@@ -209,13 +276,13 @@ main{
 
 
 .grid-item:hover .progress-bar .progress {
-    background-color: #13e91a; /* Cambia el color de la barra de progreso */
+    background-color: #d2c9b6; /* Cambia el color de la barra de progreso */
     color: white; /* Cambia el color del texto de porcentaje */
 }
 
 
 .grid-item:hover i {
-    color: #4caf50; /* Cambia el color del ícono al hacer hover */
+    color: #969280; /* Cambia el color del ícono al hacer hover */
 }
 
 #icon{
@@ -245,10 +312,10 @@ main{
   
 .progress {
     height: 30px;
-    background-color: #afa8aa;
+    background-color: #000000;
     text-align: center;
     line-height: 30px;  
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 25px;
     transition: width 0.5s ease;
     transition: background-color 0.5s ease;
@@ -399,6 +466,11 @@ textarea{
     display: none;
 }
 
+.container-iframe iframe {
+    width: 100%;
+    height: 100%;   
+}
+
 
 
 
@@ -453,9 +525,20 @@ textarea{
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100%; 
     }
     
+    .subtitle-education{
+        margin-top: 0px;
+    }
+
+    .ability {
+        padding: 0px;
+        margin: 0px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
     .container-exp {
         display: grid;
         grid-template-columns: 1fr;
@@ -545,5 +628,15 @@ textarea{
         top: 0;
         z-index: 9999;
         background-color: #F6F2F6;
+    }
+
+    .first-text {
+        padding-top: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .icon-menu{
+        font-size: 30px ;
     }
 }
