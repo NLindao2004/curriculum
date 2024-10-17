@@ -1,35 +1,55 @@
+
 html {
 
     height: 100%;
     background-color: #ffffff;
 }
 
+* { 
+    box-sizing: border-box; 
+    font-family: "Yrsa", serif;
+    color: #000000;
+}
 
+ 
 body {
     height: auto;
     width: 90%;
     margin: 0 auto; 
     background-color: #ffffff;
-    font-family: 'Candara', sans-serif;
-    color: #000000;
 }
 
 h1 {
-    font-size: 40px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    margin-top: 0px;
 }
 
 h2 {
-    font-size: 27px;
+    font-family: "Yrsa", serif;
+    font-size: 35px;
+    font-weight: 600px;
 }
 
 h3{
-    font-size: 24px;
+    font-family: "Yrsa", serif;
+    font-size: 27px;
 }
 
 h4 {
-    font-size: 20px;
+    font-family: "Yrsa", serif;
+    font-size: 24px;
 }
-* { box-sizing: border-box; }
+
+.general-text{
+    font-family: "Yrsa", serif;
+    text-align: justify;
+    line-height: 2.5;
+    font-size: 21px;
+    padding: 0px;
+}
 
   
 .nav-container {
@@ -78,7 +98,7 @@ ul li a {
     padding-top: 10px;
     background: #edede1;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: 0.3s background-color;
     display: block;
     position: relative;
@@ -144,13 +164,6 @@ ul li a {
 }
 
 
-.general-text{
-    text-align: justify;
-    line-height: 2.5;
-    font-size: 18px;
-    padding: 0px;
-}
-
 header{
     margin-left: 15px;
     margin-right: 15px;
@@ -164,32 +177,31 @@ main{
 
 
 .header-container {
-    display: flex;            /* Hacemos que el contenedor use flexbox */
-    justify-content: space-between;  /* Espacio entre el texto y la imagen */
+    display: grid;            /* Hacemos que el contenedor use flexbox */
+    grid-template-columns: 1fr 0.5fr;
     align-items: center;      /* Centra el contenido verticalmente */
     padding: 0;            /* Espacio interno del contenedor */
     padding-bottom: 20px;
+    column-gap: 30px;
 }
 
 .text-section {
-    flex: 1;                  
+               
     padding: 0px;
+}
+
+.image-section {             
+    text-align: center;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
 }
 
 .first-text{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
-}
-
-
-.image-section {
-    flex: 1;                 
-    text-align: center;       
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65vh;
 }
 
 #imagen-pricipal {
@@ -206,13 +218,25 @@ main{
 
 .education{ 
     padding: 0px;
-    margin: 0px; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
     padding-top: 20px; 
     padding-bottom: 20px;
     gap: 30px;
 }
+
+.education-container{
+    margin: 0px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;   
+    gap: 30px; 
+}
+
+.container-iframe{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 
 
 .ability{ 
@@ -237,9 +261,20 @@ main{
     padding-bottom: 20px;    
 }
 
-.responsive-figure{
+.responsive-figure-1{
     margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
 }
+
+.responsive-figure-2{
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
 
 .responsive-figure  p {
     margin-bottom: 0px;
@@ -330,7 +365,7 @@ main{
     align-items: center;      /* Centra el contenido verticalmente */
     padding: 0;   
     gap: 50px;
-    box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 5px rgba(40, 39, 49, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
 }
 
 .experience-text{
@@ -358,7 +393,7 @@ main{
 .container-project{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
 
 }
 
@@ -373,7 +408,7 @@ main{
 .card-form{
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna */
-    grid-template-rows: 0.8fr 0.8fr 0.8fr 1fr 0fr; /* Cuatro filas del mismo tamaño */
+    grid-template-rows: 0.6fr 0.6fr 0.6fr 1fr 0fr; /* Cuatro filas del mismo tamaño */
     gap: 15px; /* Espacio entre las filas */
     width: 100%; /* Ajusta el tamaño según sea necesario */
 }
@@ -382,10 +417,10 @@ main{
     grid-template-columns: 0.2fr 1fr;
     align-items: center;
     gap:10px;
-    border: 1px solid;
+    border: 0px;
     border-color: #000000;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(40, 39, 49, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
 }
 
 .icon-contact{
@@ -415,8 +450,10 @@ input {
   }
 
 
-.floating-label {
-    transition: all 0.2s ease-in-out;
+.text-label {
+    font-family: "Yrsa", serif;
+    font-size: 20px;
+    font-weight: bold;
 }
   
 input.active + .floating-label,
@@ -439,16 +476,20 @@ textarea{
 
 
 .button-form{
+    font-size: 20px;
     width: 100px;
-    height: 30px;
+    height: 35px;
     border-radius: 5px;
     cursor: pointer;           /* Cambia el cursor al puntero */
     transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 0px solid;
+    background-color: #edede1;
 }
 
 .button-form:hover{
-    background-color: #45a049; /* Color de fondo al hacer hover */
+    background-color: #969280; /* Color de fondo al hacer hover */
     transform: scale(1.05);    /* Pequeño aumento de tamaño */
+    font-weight: bold;
 }
 
 .content-footer{
@@ -465,12 +506,6 @@ textarea{
 .menu-icon {
     display: none;
 }
-
-.container-iframe iframe {
-    width: 100%;
-    height: 100%;   
-}
-
 
 
 
@@ -527,6 +562,9 @@ textarea{
         width: 100%;
         height: 100%; 
     }
+
+    
+    
     
     .subtitle-education{
         margin-top: 0px;

@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -71,18 +74,26 @@
      
     <main id="container-main">
         <section id="educacion" class="education">
-            <div> 
-                <h2 class="subtitle-education">Educación</h2>
-                <h3>Escuela Superior Politécnica del Litoral (ESPOL)</h3>
-                <h4>Estudiante de Computación</h4>
-                <h4>Abril 2022 ‑ Presente (Guayaquil, EC)</h4>
-                <p class="general-text">Proyectos Relevantes: Desarrollo de paginas en colaborativo para clientes.</p>
-                <p class="general-text">Habilidades Adquiridas: Lenguajes de programación: Python, Java, JavaScript; tecnologías web: HTML, CSS.</p>
-                <p class="general-text">Enfoque de Carrera: Interesado en el desarrollo de software y cyberseguridad, con el objetivo de contribuir a soluciones innovadoras.</p>
+            <h2 class="subtitle-education">Educación</h2>   
+            <div class="education-container">
+                <div> 
+                    <p class="general-text" style="margin-top: 0px; margin-bottom: 0px;">
+                        <b>Escuela Superior Politécnica del Litoral (ESPOL) </b> <br> 
+                        <b>Estudiante de Computación</b> <br>
+                        <b>Abril 2022 ‑ Presente (Guayaquil, EC)</b> <br>
+                        <b>Proyectos Relevantes:</b>Desarrollo de proyectos de índole academico en diferentes lenguajes de programación
+                        aprendidos durante el proceso de la carrera de Computación <br>
+                    <b>Habilidades Adquiridas:</b> Pensamiento crítico con la suficiente capacidad de analizar problemas complejos y buscar soluciones creativas y bien fundamentadas.
+                    Trabajar en conjunto para solucionar desafíos inesperados que se puedan presentar. <br>
+                    <b>Lenguajes de programación:</b> Python, Java, JavaScript; tecnologías web: HTML, CSS.<br>
+                    <b>Enfoque de Carrera:</b> Interesado en el desarrollo de software y cyberseguridad, con el objetivo de contribuir a soluciones innovadoras.</p>
+                </div>
+                <div class="container-iframe">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/uL08feCEnLE?si=KZ20QF6h_kyiWYLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="imagenes/tortuga.jpeg" alt="imagen tortuga ESPOL" style="width: 100%; height: 50%; margin-top: 20px;">
+                </div>
             </div>
-            <div class="container-iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uL08feCEnLE?si=KZ20QF6h_kyiWYLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            
            
         </section>
 
@@ -174,24 +185,38 @@
         <section id="proyectos" class="project">
             <h2>Proyectos</h2>
             <div class="container-project">
-                <figure class="responsive-figure">
+                <figure class="responsive-figure-1">
                     <img src="https://placehold.co/400x400" alt="Descripcion" class="responsive-img">
                     <figcaption>Esta es una descripción de la imagen.</figcaption>
+                    <h4>Prototipo de Salud Mental para Estudiantes Universitarios (ESPOL)</h4>
                     <p class="general-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Este proyecto consistió en el desarrollo de un prototipo interactivo en Figma enfocado en mejorar el bienestar 
+                        mental de los estudiantes universitarios de ESPOL. El proceso de diseño fue impulsado por una metodología centrada 
+                        en el usuario, que incluyó la realización de entrevistas, encuestas y observaciones para entender las necesidades, 
+                        preocupaciones y retos que enfrentan los estudiantes en su vida académica y personal.
+                        <br>
+                        A partir de los datos recopilados, se creó una plataforma digital que busca ofrecer apoyo emocional, recursos de 
+                        autoayuda, y una interfaz intuitiva que permita a los estudiantes acceder fácilmente a servicios de salud mental.
+                        El prototipo fue diseñado para ser altamente accesible y visualmente atractivo, con el objetivo de mejorar la
+                        experiencia del usuario y fomentar una comunidad universitaria más saludable y consciente del bienestar mental.
+
                     </p>
                 </figure>
-                <figure class="responsive-figure" >
+                <figure class="responsive-figure-2" >
                     <img src="https://placehold.co/400x400" alt="Descripcion" class="responsive-img">
                     <figcaption>Esta es una descripción de la imagen.</figcaption>
+                    <h4>Modificación del Juego 2048: Sucesión de Fibonacci</h4>
                     <p class="general-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Este proyecto se llevó a cabo en la materia de Matemática Discreta y consistió en la modificación del popular 
+                        juego 2048. A diferencia de la versión original, que sigue una secuencia de potencias de dos, nuestra versión 
+                        implementa la secuencia de Fibonacci como base para las combinaciones de números. Para lograr esto, se aplicaron conceptos de 
+                         recursividad y algoritmos que nos permitieron implementar la lógica necesaria para la fusión de números, 
+                         adaptando las reglas del juego a esta nueva estructura.
+                        <br>
+                        Durante el desarrollo, se trabajó en la programación del algoritmo que maneja las interacciones del juego, 
+                        asegurando que las combinaciones de números se alinearan correctamente a la lógica de la secuencia de Fibonacci.
+                         Este proyecto no solo nos permitió aplicar los conceptos aprendidos en clase, sino que también ofreció una 
+                         experiencia práctica en el desarrollo de algoritmos y el uso de recursividad en un contexto de programación de juegos.
                     </p>
                 </figure>
             </div>
@@ -209,8 +234,8 @@
                         </div>
                         
                         <div> 
-                            <label for="nombre" class="floating-label">Nombre Completo:</label><br>
-                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+                            <label for="nombre" class="text-label">Nombre Completo:</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" style="font-size: 20px; border-radius: 5px; border: 1px solid;" required>
                         </div>
                         
                     </div>
@@ -223,8 +248,8 @@
                         </div>
 
                         <div> 
-                            <label for="email">Correo Electrónico:</label><br>
-                            <input type="email" id="email" name="email" placeholder="Escribe tu email aquí" required>
+                            <label for="email" class="text-label">Correo Electrónico:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Escribe tu email aquí" style="font-size: 20px; border-radius: 5px; border: 1px solid;" required>
                         </div>
                         
                     </div>
@@ -237,8 +262,8 @@
                         </div>
                         
                         <div> 
-                            <label for="asunto">Asunto:</label><br>
-                            <input type="asunto" id="asunto" name="asunto" placeholder="Escribe el asunto aquí" required>
+                            <label for="asunto" class="text-label">Asunto:</label><br>
+                            <input type="asunto" id="asunto" name="asunto" placeholder="Escribe el asunto aquí" style="font-size: 20px; border-radius: 5px; border: 1px solid;" required>
                         </div>
         
                     </div>
@@ -251,8 +276,8 @@
                         </div>
                         
                         <div> 
-                            <label for="mensaje">Mensaje:</label><br>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                            <label for="mensaje" class="text-label">Mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" style="font-size: 20px; border-radius: 5px; border: 1px solid;" required></textarea>
                         </div>
                         
                     </div>
