@@ -311,13 +311,13 @@ main{
 
 
 .grid-item:hover .progress-bar .progress {
-    background-color: #d2c9b6; /* Cambia el color de la barra de progreso */
-    color: white; /* Cambia el color del texto de porcentaje */
+    background-color: #000000; /* Cambia el color de la barra de progreso */
+    color: rgb(255, 255, 255); /* Cambia el color del texto de porcentaje */
 }
 
 
 .grid-item:hover i {
-    color: #969280; /* Cambia el color del ícono al hacer hover */
+    color: #9e9c91; /* Cambia el color del ícono al hacer hover */
 }
 
 #icon{
@@ -340,7 +340,7 @@ main{
 .progress-bar {
     flex: 1;
     width: 100%;
-    background-color: #E1D5D9;
+    background-color: #d6d6c7;
     border-radius: 25px;
     overflow: hidden;
   }
@@ -352,7 +352,7 @@ main{
     line-height: 30px;  
     color: rgb(255, 255, 255);
     border-radius: 25px;
-    transition: width 0.5s ease;
+    transition: width 1s ease-in-out;
     transition: background-color 0.5s ease;
 }
   
@@ -484,6 +484,8 @@ textarea{
     transition: background-color 0.3s ease, transform 0.3s ease;
     border: 0px solid;
     background-color: #edede1;
+    box-shadow: 5px 5px 5px rgba(40, 39, 49, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+
 }
 
 .button-form:hover{
@@ -507,7 +509,10 @@ textarea{
     display: none;
 }
 
-
+.responsive-img{
+    width: 100%;
+    height: 70vh;
+}
 
 /* Media query para móviles (pantallas de hasta 768px) */
 @media (max-width: 768px) {

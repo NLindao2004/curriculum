@@ -28,3 +28,12 @@ function toggleMenu() {
   const navList = document.getElementById('nav-list');
   navList.classList.toggle('active'); 
 }
+
+
+
+function animateProgress(percentage) {
+  const progress = document.getElementById("progress");
+  progress.style.width = percentage + "%"; 
+}
+
+animateProgress(75); 
