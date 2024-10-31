@@ -536,10 +536,34 @@ textarea{
 
     }
     /* Ajusta los ítems del grid a una sola columna */
-    .education{
-        display: contents;
+    .education-container{
+        display: flex;
+        flex-direction: column;
         padding: 0%;
         align-items: center;
+    }
+
+    .container-iframe{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
+    }
+
+    .responsive-figure-2{
+        margin: 0;
+    }
+
+    .responsive-figure-1{
+        margin: 0;
+    }
+
+    .container-project{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        align-items: center; 
     }
 
     .grid-container{
@@ -629,6 +653,7 @@ textarea{
 
     .menu-icon {
         display: block; /* Muestra el icono en móviles */
+        cursor: pointer;
     }
 
     #nav-list {
@@ -637,7 +662,7 @@ textarea{
         position: absolute; /* Posiciona el menú */
         top: 50px; /* Ajusta según sea necesario */
         left: 0;
-        background-color: #F6F2F6; /* Fondo del menú */
+        background-color: #ffffff; /* Fondo del menú */
         width: 100%; /* Ancho completo */
     }
 
@@ -645,18 +670,19 @@ textarea{
         display: flex; /* Muestra el menú al activar */
     }
 
+
     .menu:before, .menu:after {
         display: none; /* Oculta los pseudo-elementos */
     }
 
     .menu {
-        border-radius: 0; /* Quita el border-radius */
+        border-radius: 0; 
         border: 1px solid black; /* Quita el borde */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        background: red; /* Quita el fondo */
-        text-align: center; /* Ajusta la alineación del texto si es necesario */
-        transition: none; /* Quita las transiciones */
-        cursor: default; /* Cambia el cursor si lo deseas */
+        height: auto; 
+        background: rgb(179, 171, 171);
+        text-align: center; 
+        transition: none; 
+        cursor: default; 
         padding: 7px;
 
     }
@@ -671,7 +697,7 @@ textarea{
         position: sticky;
         top: 0;
         z-index: 9999;
-        background-color: #F6F2F6;
+        background-color: #ffffff;
     }
 
     .first-text {

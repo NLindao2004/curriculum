@@ -29,6 +29,11 @@ function toggleMenu() {
   navList.classList.toggle('active'); 
 }
 
+function closeMenu() {
+  const menu = document.getElementById('nav-list');
+  menu.classList.remove('active'); // Quita la clase 'open' para cerrar el menú
+}
+
 
 
 function animateProgressBars() {
